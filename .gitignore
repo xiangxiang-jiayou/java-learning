@@ -1,28 +1,42 @@
-# 编译产物
-target/
-build/
+### IntelliJ IDEA ###
 out/
-bin/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.idea/
+*.iml
+
+### 编译产物 ###
 *.class
 *.jar
 *.war
 *.ear
+build/
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
 
-# 日志与临时文件
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### 日志与临时文件 ###
 *.log
 *.tmp
-*.bak
 hs_err_pid*
-
-# IDE
-.idea/
-*.iml
-*.ipr
-*.iws
-.vscode/
-*.swp
-
-# 系统
-.DS_Store
 Thumbs.db
-desktop.ini
+.DS_Store
